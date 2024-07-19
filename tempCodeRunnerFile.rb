@@ -1,0 +1,1 @@
+@contacts = db.execute "SELECT * FROM Users"

@@ -1,0 +1,49 @@
+<html>
+    <head>
+    
+    
+    
+    
+    </head>
+
+
+    
+    
+    
+    <body>
+        <h1>Контакты</h1>
+
+       <ul><br>
+            <% @contacts.each do |contact| %>
+            <li>
+                <strong>Парикмахер:</strong> <%= contact['barber'] %><br>
+                <strong>Имя:</strong> <%= contact['username'] %>
+                <strong>Телефон:</strong> <%= contact['phone'] %>
+                <strong>Дата и время:</strong> <%= contact['datestamp'] %>
+                
+                <strong>Почта:</strong> <%= contact['mails'] %>                   <strong>Цвет:</strong> <%= contact['color'] %><br>
+                <!-- Добавьте другие поля по вашему усмотрению -->
+            </li>
+            <% end %>
+        
+        </ul><br>
+        
+    
+    
+    
+    
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
