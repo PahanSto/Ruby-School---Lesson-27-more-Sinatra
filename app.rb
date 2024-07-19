@@ -145,6 +145,9 @@ end
 
 
 get '/showers' do
+	db = get_db
+	@results = db.execute 'select * from Users order by id desc'
+	
 	erb :showers
 	
 end
