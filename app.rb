@@ -125,18 +125,18 @@ post '/visit' do
 
 	db = get_db
 	db.execute "INSERT INTO Users 
-	(
-		username, 
-		phone, 
-		datestamp, 
-		barber, 
-		mails,
-		color
-	) 
-	VALUES (?, ?, ?, ?, ?, ?)", [@username, @phone, @datetime, @barber, @mail, @color]
+		(
+			username, 
+			phone, 
+			datestamp, 
+			barber, 
+			mails,
+			color
+		) 
+		VALUES (?, ?, ?, ?, ?, ?)", [@username, @phone, @datetime, @barber, @mail, @color]
 	
 	
-	redirect request.referrer
+	 # redirect request.referrer
 	
 	
 	erb "<h2>Спасибо, вы записались!</h2>"
